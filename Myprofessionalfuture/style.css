@@ -1,0 +1,705 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font1);
+}
+
+:root {
+  --transition: 0.8s all ease-in-out;
+  --shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  --font1: "Roboto", sans-serif;
+  --font2: "Libre Franklin", sans-serif;
+  --font3: "Oswald", sans-serif;
+  --pri-color: #004AAD;
+  --sec-color: #f4f4f4;
+  --thr-color: #030c17;
+  --wht-color: white;
+  --blk-color: black;
+}
+
+body {
+  background-image: url(./byf4.jpeg);
+  background-size: cover;
+  width: 98vw;
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100vw;
+  height: 100px;
+  position: fixed;
+  overflow: hidden;
+  border-radius: 1px solid black;
+  box-shadow: 0 0 10px 0px black;
+  background-color: rgba(255, 255, 255, 0.901);
+}
+header .home {
+  margin-top: 2rem;
+}
+header .home .nav {
+  display: flex;
+}
+header .home .logo {
+  color: #004aa0;
+  font-size: 2rem;
+  position: fixed;
+  top: 5%;
+  left: 8%;
+}
+header .home ul {
+  font-size: 1rem;
+  display: flex;
+  position: fixed;
+  top: 5%;
+  right: 2%;
+  margin-top: 1rem;
+}
+header .home ul li {
+  margin: 0 1rem;
+  height: -moz-min-content;
+  height: min-content;
+  list-style: none;
+}
+header .home ul li a {
+  text-decoration: none;
+  font-weight: bolder;
+}
+header .home ul li a:hover, header .home ul li a :active {
+  color: gray;
+  text-shadow: #004aa0;
+  box-shadow: #004aa0;
+  transition: 0.2s;
+}
+header .home ul li #home {
+  color: rgb(151, 151, 151);
+}
+
+main section {
+  overflow: hidden;
+}
+main section a {
+  text-decoration: none;
+}
+main section .section {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  background-image: url(clouds.png);
+}
+main section .section .nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background-color: #004AAD;
+  border-radius: 100px;
+  width: 25px;
+  height: 25px;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+main section .section .body {
+  width: 90vw;
+  height: 70vh;
+  display: flex;
+  margin-top: 10rem;
+  background-size: cover;
+}
+main section .section .body .body-text {
+  margin-left: 12rem;
+  margin-bottom: 5rem;
+}
+main section .section .body .body-text .start {
+  width: 100%;
+  height: 64px;
+  border-bottom: #004aa0;
+  background-color: #004aa0;
+  color: white;
+  font-size: 1rem;
+  border-radius: 10px;
+  margin-top: -1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+main section .section .body .body-text .start:hover {
+  color: gray;
+  transition: 0.3s;
+}
+main section .section .body .body-text img {
+  margin-top: 4rem;
+  width: 100%;
+}
+main section .section .body .body-img {
+  position: relative;
+  left: 10%;
+  width: 100vw;
+  height: 70vh;
+}
+main section .section .body .body-img img {
+  width: 50vw;
+  height: 79vh;
+  margin-top: -5rem;
+}
+main section .cards {
+  margin-bottom: 5rem;
+  margin-top: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+main section .cards .card {
+  overflow: hidden;
+  width: 26vw;
+  height: 60vh;
+  margin-left: 2.5rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+main section .cards .card:hover {
+  transition: var(--transition);
+  background-image: none;
+}
+main section .cards .card:hover .card-text {
+  display: block;
+}
+main section .cards .card:hover .bg-text {
+  display: block;
+  color: var(--thr-color);
+  font-size: 1.2rem;
+}
+main section .cards .card:hover h5 {
+  display: block;
+  margin-top: -4rem;
+  font-size: 2rem;
+  transition: var(--transition);
+}
+main section .cards .card:hover p {
+  display: none;
+}
+main section .cards .card .bg-text {
+  display: none;
+}
+main section .cards .card h5 {
+  position: relative;
+  margin-top: 98%;
+  width: 110%;
+  padding-bottom: 1rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #004aa0;
+  font-size: 2rem;
+}
+main section .cards .card p {
+  width: 24vw;
+  background-color: white;
+  font-size: 1rem;
+  margin-top: -1rem;
+}
+main section .cards .card .card-text {
+  cursor: pointer;
+}
+main section .cards .cone {
+  background-image: url(./Learning-amico.png);
+  background-size: cover;
+}
+main section .cards .ctwo {
+  background-image: url(./Search-rafiki.png);
+  background-size: cover;
+}
+main section .cards .cthree {
+  background-image: url(./Learning-cuate.png);
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font1);
+  }
+  :root {
+    --transition: 0.8s all ease-in-out;
+    --shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+    --font1: "Roboto", sans-serif;
+    --font2: "Libre Franklin", sans-serif;
+    --font3: "Oswald", sans-serif;
+    --pri-color: #004AAD;
+    --sec-color: #f4f4f4;
+    --thr-color: #030c17;
+    --wht-color: white;
+    --blk-color: black;
+  }
+  body {
+    background-image: url(./byf4.jpeg);
+    background-size: cover;
+    width: 90vw !important;
+    scroll-behavior: smooth;
+  }
+  header {
+    width: 100vw;
+    height: 100px;
+    position: fixed;
+    overflow: hidden;
+    border-radius: 1px solid black;
+    box-shadow: 0 0 10px 0px black;
+    background-color: rgba(255, 255, 255, 0.901);
+  }
+  header .home {
+    margin-top: 2rem;
+  }
+  header .home .nav {
+    display: flex;
+  }
+  header .home .logo {
+    color: #004aa0;
+    font-size: 1rem;
+    position: fixed;
+    top: 5%;
+    left: 8%;
+  }
+  header .home ul {
+    font-size: 0.8rem;
+    display: flex;
+    position: fixed;
+    top: 2.9%;
+    right: 7%;
+    margin-top: 1rem;
+  }
+  header .home ul li {
+    margin: 0 0.2rem;
+    height: -moz-min-content;
+    height: min-content;
+    list-style: none;
+  }
+  header .home ul li a {
+    text-decoration: none;
+    font-weight: bolder;
+  }
+  header .home ul li a:hover, header .home ul li a :active {
+    color: gray;
+    text-shadow: #004aa0;
+    box-shadow: #004aa0;
+    transition: 0.2s;
+  }
+  header .home ul li #home {
+    color: rgb(151, 151, 151);
+  }
+  main section {
+    overflow: hidden;
+    width: 100vw;
+  }
+  main section .nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: #004AAD;
+    border-radius: 100px;
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  main section .section {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    background-image: url(clouds.png);
+    background-size: cover;
+    overflow: hidden;
+    transition: var(--transition);
+  }
+  main section .section .body {
+    overflow: hidden;
+    width: 100vw;
+    height: 72vh;
+    position: relative;
+    left: 24%;
+    margin-top: 10rem;
+    background-size: cover;
+  }
+  main section .section .body .body-text {
+    overflow: hidden;
+    width: -moz-min-content;
+    width: min-content;
+    margin-left: 0rem;
+    margin-bottom: 1rem;
+  }
+  main section .section .body .body-text .start {
+    overflow: hidden;
+    width: 230px;
+    height: 64px;
+    border-bottom: #004aa0;
+    background-color: #004aa0;
+    color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+    margin-top: -1rem;
+    margin-right: 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  main section .section .body .body-text .start:hover {
+    color: gray;
+    transition: 0.3s;
+  }
+  main section .section .body .body-text img {
+    overflow: hidden;
+    width: 50vw;
+    position: relative;
+    left: 5%;
+  }
+  main section .section .body .body-img {
+    overflow: hidden;
+    display: none;
+    position: relative;
+    left: 5%;
+    width: 100vw;
+    height: 60vh;
+  }
+  main section .section .body .body-img img {
+    width: 100vw;
+    height: 7vh;
+    margin-top: -5rem;
+  }
+  main section .cards {
+    margin-bottom: 5rem;
+    margin-top: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    width: -moz-min-content;
+    width: min-content;
+  }
+  main section .cards .card {
+    overflow: hidden;
+    width: 22vw;
+    height: 40vh;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+  }
+  main section .cards .card:hover {
+    transition: var(--transition);
+    background-image: none;
+  }
+  main section .cards .card:hover .card-text {
+    display: block;
+  }
+  main section .cards .card:hover .bg-text {
+    display: block;
+    color: var(--thr-color);
+    font-size: 0.8rem;
+  }
+  main section .cards .card:hover h5 {
+    display: block;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    transition: var(--transition);
+    padding: 1rem;
+  }
+  main section .cards .card:hover p {
+    display: none;
+  }
+  main section .cards .card .bg-text {
+    display: none;
+  }
+  main section .cards .card h5 {
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    margin-top: 8%;
+    width: 110%;
+    padding-bottom: 1rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #004aa0;
+    font-size: 1rem;
+  }
+  main section .cards .card p {
+    width: 24vw;
+    background-color: white;
+    font-size: 0.6rem;
+    text-align: center;
+    padding: 1rem;
+    margin-top: -0.5rem;
+  }
+  main section .cards .card .card-text {
+    cursor: pointer;
+  }
+  main section .cards .cone {
+    background-image: url(./Learning-amico.png);
+    background-size: cover;
+  }
+  main section .cards .ctwo {
+    background-image: url(./Search-rafiki.png);
+    background-size: cover;
+  }
+  main section .cards .cthree {
+    background-image: url(./Learning-cuate.png);
+    background-size: cover;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 769px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font1);
+  }
+  :root {
+    --transition: 0.8s all ease-in-out;
+    --shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+    --font1: "Roboto", sans-serif;
+    --font2: "Libre Franklin", sans-serif;
+    --font3: "Oswald", sans-serif;
+    --pri-color: #004AAD;
+    --sec-color: #f4f4f4;
+    --thr-color: #030c17;
+    --wht-color: white;
+    --blk-color: black;
+  }
+  body {
+    background-image: url(./byf4.jpeg);
+    background-size: cover;
+    width: 98vw;
+  }
+  header {
+    width: 100vw;
+    height: 100px;
+    position: fixed;
+    overflow: hidden;
+    border-radius: 1px solid black;
+    box-shadow: 0 0 10px 0px black;
+    background-color: rgba(255, 255, 255, 0.901);
+  }
+  header .home {
+    margin-top: 2rem;
+  }
+  header .home .nav {
+    display: flex;
+  }
+  header .home .logo {
+    color: #004aa0;
+    font-size: 1rem;
+    position: fixed;
+    top: 5%;
+    left: 8%;
+  }
+  header .home ul {
+    font-size: 0.8rem;
+    display: flex;
+    position: fixed;
+    top: 2.7%;
+    right: 2%;
+    margin-top: 1rem;
+  }
+  header .home ul li {
+    margin: 0 0.7rem;
+    height: -moz-min-content;
+    height: min-content;
+    list-style: none;
+  }
+  header .home ul li a {
+    text-decoration: none;
+    font-weight: bolder;
+  }
+  header .home ul li a:hover, header .home ul li a :active {
+    color: gray;
+    text-shadow: #004aa0;
+    box-shadow: #004aa0;
+    transition: 0.2s;
+  }
+  header .home ul li #home {
+    color: rgb(151, 151, 151);
+  }
+  main section {
+    overflow: hidden;
+    width: 100vw;
+  }
+  main section .section {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    background-image: url(clouds.png);
+    background-size: cover;
+    overflow: hidden;
+    transition: var(--transition);
+  }
+  main section .section .body {
+    overflow: hidden;
+    width: -moz-max-content;
+    width: max-content;
+    height: 100vh;
+    margin-top: 10rem;
+    background-size: cover;
+  }
+  main section .section .body .body-text {
+    overflow: hidden;
+    width: -moz-min-content;
+    width: min-content;
+    margin-left: 0rem;
+    margin-bottom: 5rem;
+  }
+  main section .section .body .body-text .start {
+    overflow: hidden;
+    width: 230px;
+    height: 64px;
+    border-bottom: #004aa0;
+    background-color: #004aa0;
+    color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+    margin-top: -1rem;
+    margin-right: 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  main section .section .body .body-text .start:hover {
+    color: gray;
+    transition: 0.3s;
+  }
+  main section .section .body .body-text img {
+    overflow: hidden;
+    width: 50vw;
+  }
+  main section .section .body .body-img {
+    overflow: hidden;
+    display: none;
+    position: relative;
+    left: 1%;
+    width: 100vw;
+    height: 70vh;
+  }
+  main section .section .body .body-img img {
+    width: 100vw;
+    height: 79vh;
+    margin-top: -5rem;
+  }
+  main section .cards {
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-color: #004aa0;
+    width: -moz-min-content;
+    width: min-content;
+  }
+  main section .cards .card {
+    overflow: hidden;
+    width: 28vw;
+    height: 40vh;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+  }
+  main section .cards .card:hover {
+    transition: var(--transition);
+    background-image: none;
+  }
+  main section .cards .card:hover .card-text {
+    display: block;
+  }
+  main section .cards .card:hover .bg-text {
+    display: block;
+    color: var(--thr-color);
+    font-size: 0.8rem;
+  }
+  main section .cards .card:hover h5 {
+    display: block;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    transition: var(--transition);
+  }
+  main section .cards .card:hover p {
+    display: none;
+  }
+  main section .cards .card .bg-text {
+    display: none;
+  }
+  main section .cards .card h5 {
+    position: relative;
+    margin-top: 8%;
+    width: 110%;
+    padding-bottom: 1rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #004aa0;
+    font-size: 1rem;
+  }
+  main section .cards .card p {
+    width: 24vw;
+    background-color: white;
+    font-size: 0.7rem;
+    margin-top: -0.5rem;
+  }
+  main section .cards .card .card-text {
+    cursor: pointer;
+  }
+  main section .cards .cone {
+    background-image: url(./Learning-amico.png);
+    background-size: cover;
+  }
+  main section .cards .ctwo {
+    background-image: url(./Search-rafiki.png);
+    background-size: cover;
+  }
+  main section .cards .cthree {
+    background-image: url(./Learning-cuate.png);
+    background-size: cover;
+  }
+  a {
+    text-decoration: none;
+  }
+}/*# sourceMappingURL=style.css.map */

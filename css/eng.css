@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font1);
+}
+
+:root {
+  --transition: 0.8s all ease-in-out;
+  --shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  --font1: "Roboto", sans-serif;
+  --font2: "Libre Franklin", sans-serif;
+  --font3: "Oswald", sans-serif;
+  --pri-color: #004AAD;
+  --sec-color: #f4f4f4;
+  --thr-color: #030c17;
+  --wht-color: white;
+  --blk-color: black;
+}
+
+body {
+  background-image: url(../media/p.png);
+  background-size: cover;
+  transition: var(--transition);
+}
+
+header .header {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  margin-top: 2rem;
+}
+header .header .img {
+  margin-right: rem;
+  width: 200px;
+}
+header .header .img img {
+  width: 100%;
+}
+header .header .upper-btn {
+  color: var(--pri-color);
+  background-color: var(--sec-color);
+  display: block;
+  margin: 1rem;
+}
+
+main h1 {
+  text-align: center;
+}
+main .sections {
+  transition: var(--transition);
+}
+main .section {
+  transition: var(--transition);
+  background-color: var(--sec-color);
+  border-radius: 10px;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  width: 98vw;
+  height: 79vh;
+  transition: var(--transition);
+  margin-bottom: 4em;
+  transition: var(--transition);
+}
+main .section h2 {
+  color: var(--pri-color);
+  font-weight: bolder;
+  display: none;
+  transition: var(--transition);
+}
+main .section .block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 85%;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  overflow: hidden;
+  border-radius: 10px;
+  transition: var(--transition);
+}
+main .section .block:hover {
+  transition: var(--transition);
+  background-image: none;
+  overflow: hidden;
+}
+main .section .block:hover .btn {
+  overflow: hidden;
+  display: block;
+  color: var(--wht-color);
+  background-color: var(--pri-color);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+main .section .block:hover .btn:hover {
+  overflow: hidden;
+  background-color: var(--wht-color);
+  transition: var(--transition);
+}
+main .section .block:hover .btn:hover .material-symbols-outlined {
+  color: var(--pri-color);
+  transition: var(--transition);
+}
+main .section .block:hover h2 {
+  display: block;
+}
+main .section .sec1 {
+  background-image: url(../media/Website\ Creator-rafiki.png);
+  background-size: cover;
+  background-position-y: top;
+}
+main .section .sec2 {
+  background-image: url(../media/mec.jpg);
+  background-size: cover;
+  background-position-y: top;
+}
+main .section .sec3 {
+  background-image: url(../media/Electrician-amico.png);
+  background-size: cover;
+  background-position-y: bottom;
+  background-position: 1%;
+}
+main .section .sec4 {
+  background-image: url(../media/conscivil.png);
+  background-size: cover;
+  background-position-y: center;
+}
+main .section .sec5 {
+  background-image: url(../media/Water\ pollution-bro.png);
+  background-size: cover;
+  background-position-y: top;
+}
+main .section .sec6 {
+  background-image: url(../media/chemist-bro.png);
+  background-size: cover;
+  background-position-y: top;
+}
+main .section .sec7 {
+  background-image: url(../media/epi2.jpg);
+  background-size: cover;
+  background-position-y: bottom;
+  background-position: 1%;
+}
+main .section .sec8 {
+  background-image: url(../media/arch.png);
+  background-size: cover;
+  background-position-y: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font1);
+  }
+  :root {
+    --transition: 0.8s all ease-in-out;
+    --shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+    --font1: "Roboto", sans-serif;
+    --font2: "Libre Franklin", sans-serif;
+    --font3: "Oswald", sans-serif;
+    --pri-color: #004AAD;
+    --sec-color: #f4f4f4;
+    --thr-color: #030c17;
+    --wht-color: white;
+    --blk-color: black;
+  }
+  body {
+    background-image: url(../media/p.png);
+    background-size: cover;
+    transition: var(--transition);
+  }
+  header .header {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-top: 2rem;
+  }
+  header .header .img {
+    margin-right: rem;
+    width: 200px;
+  }
+  header .header .img img {
+    width: 100%;
+  }
+  header .header .upper-btn {
+    color: var(--pri-color);
+    background-color: var(--sec-color);
+    display: block;
+    margin: 1rem;
+  }
+  main h1 {
+    text-align: center;
+    color: var(--pri-color);
+    font-weight: bolder;
+  }
+  main .sections {
+    transition: var(--transition);
+  }
+  main .section {
+    transition: var(--transition);
+    background-color: var(--sec-color);
+    border-radius: 10px;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    width: 90vw;
+    height: 110vh;
+    transition: var(--transition);
+    margin-bottom: 4em;
+    transition: var(--transition);
+  }
+  main .section .section-text {
+    display: flex;
+    font-size: 0.4rem;
+  }
+  main .section h2 {
+    color: var(--pri-color);
+    font-weight: bolder;
+    transition: var(--transition);
+  }
+  main .section .block {
+    font-size: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 85%;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    overflow: hidden;
+    border-radius: 10px;
+    transition: var(--transition);
+    padding: 1rem;
+  }
+  main .section .block:hover {
+    transition: var(--transition);
+    background-image: none;
+    overflow: hidden;
+  }
+  main .section .block:hover .btn {
+    overflow: hidden;
+    display: block;
+    color: var(--wht-color);
+    background-color: var(--pri-color);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+  }
+  main .section .block:hover .btn:hover {
+    overflow: hidden;
+    background-color: var(--wht-color);
+    transition: var(--transition);
+  }
+  main .section .block:hover .btn:hover .material-symbols-outlined {
+    color: var(--pri-color);
+    transition: var(--transition);
+  }
+  main .section .block:hover h2 {
+    display: block;
+  }
+  main .section .sec1 {
+    background-image: url(../media/Website\ Creator-rafiki.png);
+    background-size: cover;
+    background-position-y: center;
+  }
+  main .section .sec2 {
+    background-image: url(../media/mec.jpg);
+    background-size: cover;
+    background-position-y: center;
+  }
+  main .section .sec3 {
+    background-image: url(../media/Electrician-amico.png);
+  }
+  main .section .sec4 {
+    background-image: url(../media/conscivil.png);
+    background-size: cover;
+    background-position-y: center;
+  }
+  main .section .sec5 {
+    background-image: url(../media/Water\ pollution-bro.png);
+    background-size: cover;
+    background-position-y: center;
+  }
+  main .section .sec6 {
+    background-image: url(../media/chemist-bro.png);
+    background-size: cover;
+    background-position-y: center;
+  }
+  main .section .sec7 {
+    background-image: url(../media/epi2.jpg);
+    background-size: cover;
+    background-position-y: center;
+    background-position: 1%;
+  }
+  main .section .sec8 {
+    background-image: url(../media/arch.png);
+    background-size: cover;
+    background-position-y: center;
+  }
+  a {
+    text-decoration: none;
+  }
+}/*# sourceMappingURL=eng.css.map */

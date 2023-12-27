@@ -1,0 +1,341 @@
+* {
+  color: var(--pri-color);
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --tansition: 0.5s all ease-in-out;
+  --shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  --font1: "Roboto", sans-serif;
+  --font2: "Libre Franklin", sans-serif;
+  --font3: "Oswald", sans-serif;
+  --pri-color: #00377e;
+  --sec-color: #f4f4f4;
+  --thr-color: #030c17;
+  --wht-color: white;
+  --blk-color: black;
+}
+
+header .img {
+  width: 110px;
+  position: relative;
+  margin-top: 20px;
+  margin-right: 1rem;
+  margin-bottom: 4rem;
+  display: flex;
+}
+header .img .dmode {
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .img button {
+  border-color: rgba(255, 255, 255, 0);
+  background-color: white;
+}
+header .img img {
+  width: 100%;
+  padding-right: 1rem;
+}
+
+body {
+  font-family: var(--font1);
+  background-color: #f2f2f2;
+  background-image: url(../media/p.png);
+  background-size: cover;
+  transition: 0.8s all ease-in;
+  height: 100vh;
+}
+body h1, body h2 {
+  text-align: center;
+  padding: 1rem;
+}
+body h3 {
+  padding-top: 1rem;
+}
+
+.textsection {
+  padding-top: 20px;
+  height: -moz-min-content;
+  height: min-content;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.roadmap-container {
+  position: relative;
+  width: 100vw;
+  height: 500px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkpoint {
+  position: absolute;
+  width: 200px;
+  height: 120px;
+  background-color: var(--pri-color);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  z-index: 2;
+  margin-top: 1rem;
+}
+
+.start {
+  left: 20px;
+}
+
+.checkpoint-1 {
+  left: 30%;
+  transform: translateX(-50%);
+}
+
+.checkpoint-2 {
+  left: 55%;
+  transform: translateX(50%);
+}
+
+.checkpoint-3 {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.checkpoint-4 {
+  right: 30%;
+  transform: translateX(50%);
+}
+
+.end {
+  right: 20px;
+}
+
+.connector {
+  position: absolute;
+  height: 4px;
+  background-color: #3498db;
+  top: 50%;
+  z-index: 1;
+}
+
+.connector-1 {
+  left: 35px;
+  width: calc(90% - 20px - 15px);
+}
+
+.connector-2 {
+  left: calc(50% + 15px);
+  width: calc(50% - 20px - 15px);
+}
+
+.arrow {
+  position: absolute;
+  top: 43.6%;
+  width: 20px;
+  height: 10px;
+  background-color: #00377e;
+  border-radius: 10px;
+}
+
+.arrow-1 {
+  left: calc(23% - 10px);
+}
+
+.arrow-2 {
+  left: calc(41.4% - 10px);
+}
+
+.arrow-3 {
+  right: calc(38% - 10px);
+}
+
+.arrow-4 {
+  right: calc(252% - 10px);
+}
+
+.arrow-5 {
+  right: calc(5457% - 10px);
+}
+
+.arrow-6 {
+  right: calc(50% - 10px);
+}
+
+@media screen and (max-width: 600px) {
+  * {
+    color: var(--pri-color);
+    margin: 0;
+    padding: 0;
+  }
+  :root {
+    --tansition: 0.5s all ease-in-out;
+    --shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+    --font1: "Roboto", sans-serif;
+    --font2: "Libre Franklin", sans-serif;
+    --font3: "Oswald", sans-serif;
+    --pri-color: #00377e;
+    --sec-color: #f4f4f4;
+    --thr-color: #030c17;
+    --wht-color: white;
+    --blk-color: black;
+  }
+  header .img {
+    width: 200px;
+    position: relative;
+    margin-top: 20px;
+    margin-right: 1rem;
+    display: flex;
+  }
+  header .img .dmode {
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .img button {
+    border-color: rgba(255, 255, 255, 0);
+    background-color: white;
+  }
+  header .img img {
+    width: 100%;
+    padding-right: 1rem;
+  }
+  body {
+    font-family: var(--font1);
+    background-color: #f2f2f2;
+    background-image: url(../media/p.png);
+    background-size: cover;
+    transition: 0.8s all ease-in;
+    height: 100vh;
+  }
+  body h1, body h2 {
+    text-align: center;
+  }
+  body h3 {
+    padding-top: 1rem;
+  }
+  .textsection {
+    padding-top: 20px;
+    height: -moz-min-content;
+    height: min-content;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .roadmap-container {
+    position: relative;
+    width: 84%;
+    height: 200px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .checkpoint {
+    position: absolute;
+    width: -moz-min-content;
+    width: min-content;
+    height: 120px;
+    background-color: var(--pri-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.6rem;
+    padding: 1rem;
+    z-index: 2;
+    margin-top: 1rem;
+  }
+  .start {
+    left: 2%;
+  }
+  .checkpoint-1 {
+    left: 30%;
+    transform: translateX(-50%);
+  }
+  .checkpoint-2 {
+    left: 40%;
+    transform: translateX(50%);
+  }
+  .checkpoint-3 {
+    left: 74%;
+    transform: translateX(-50%);
+  }
+  .checkpoint-4 {
+    left: 70%;
+    transform: translateX(50%);
+  }
+  .end {
+    right: 2%;
+  }
+  .connector {
+    position: absolute;
+    height: 4px;
+    background-color: #3498db;
+    top: 50%;
+    z-index: 1;
+  }
+  .connector-1 {
+    left: 35px;
+    width: calc(90% - 20px - 15px);
+  }
+  .connector-2 {
+    left: calc(50% + 15px);
+    width: calc(50% - 20px - 15px);
+  }
+  .arrow {
+    position: absolute;
+    top: 43.6%;
+    width: 20px;
+    height: 10px;
+    background-color: #00377e;
+    border-radius: 10px;
+  }
+  .arrow-1 {
+    left: calc(23% - 10px);
+  }
+  .arrow-2 {
+    left: calc(41.4% - 10px);
+  }
+  .arrow-3 {
+    right: calc(38% - 10px);
+  }
+  .arrow-4 {
+    right: calc(252% - 10px);
+  }
+  .arrow-5 {
+    right: calc(5457% - 10px);
+  }
+  .arrow-6 {
+    right: calc(50% - 10px);
+  }
+}/*# sourceMappingURL=guiau.css.map */

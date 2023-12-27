@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font1);
+}
+
+:root {
+  --transition: 0.8s all ease-in-out;
+  --shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  --font1: "Roboto", sans-serif,;
+  --font2: "Libre Franklin", sans-serif;
+  --font3: "Oswald", sans-serif;
+  --pri-color: #004AAD;
+  --sec-color: #f4f4f4;
+  --thr-color: #030c17;
+  --wht-color: white;
+  --blk-color: black;
+}
+
+body {
+  background-image: url(../media/p.png);
+  background-size: cover;
+  font-weight: bolder;
+}
+
+header .header {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  margin-top: 2rem;
+}
+header .header .img {
+  margin-right: rem;
+  width: 200px;
+}
+header .header .img img {
+  width: 100%;
+}
+header .header .upper-btn {
+  color: var(--pri-color);
+  background-color: var(--sec-color);
+  display: block;
+  margin: 1rem;
+}
+
+main {
+  overflow: hidden;
+}
+main .sections {
+  overflow: hidden;
+  display: flex;
+}
+main .sections .section {
+  overflow: hidden;
+  background-color: var(--sec-color);
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
+}
+main .sections .section h1 {
+  color: var(--pri-color);
+}
+main .sections .section .block h1 {
+  color: var(--pri-color);
+}
+main .sections .section .block h2 {
+  text-align: center;
+  color: var(--pri-color);
+}
+main .sections .section .block h3 {
+  color: var(--pri-color);
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+main .sections .section .block h4 {
+  background-image: url(../media/p.png);
+  color: var(--pri-color);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  padding: 1rem;
+}
+main .sections .section .block p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+main .sections .section .block .img {
+  width: 80vw;
+  display: flex;
+}
+main .sections .section .block .img img {
+  width: 600px;
+  height: 400px;
+}
+main .sections .sec1 {
+  background-image: url(../media/);
+}
+main .sections .sec2 .table-btn {
+  text-decoration: none;
+  border-bottom: hsl(214, 100%, 34%);
+  color: white;
+  margin-left: 6.3rem;
+  margin-top: 0.4rem;
+  background-color: #004AAD;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20vw;
+  height: 60px;
+}
+
+table {
+  background-color: var(--sec-color);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  width: 500px;
+  text-align: center;
+}
+table thead {
+  background-color: #030c17;
+  color: var(--wht-color);
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+}/*# sourceMappingURL=informatica.css.map */

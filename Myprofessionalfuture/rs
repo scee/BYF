@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    height: 40vh;
+    box-sizing: border-box;
+    font-family:  'Roboto', sans-serif;
+}
+
+body{
+    background-image:url(./byf4.jpeg);
+    background-size: cover;
+    width: 98vw;
+    overflow: hidden;
+}
+
+header{
+    height: 180px;
+    .home{
+        margin-top: 2rem;
+        .nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .logo{
+            color:#004aa0;
+            font-size: 3rem;
+            margin-right: 18rem;
+        }
+        ul{
+            font-size: 1.3rem;
+            display: flex;
+            margin-top: 1rem;
+            li{
+                
+                margin: 0 3rem;
+                height: min-content;
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    font-weight: bolder;
+                    
+                }
+                #home{
+                    color: rgb(151, 151, 151);
+                }
+            }
+        }
+    }
+}
+
+main{
+    section{
+        
+        .section{
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 5rem;
+            .body{
+               
+                
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                
+                //background-image: url(backsection1.jpeg);
+                background-size: cover;
+                
+                .body-text{
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    height: min-content;
+                    margin-left: 8rem;
+                    margin-bottom: 5rem;
+                    .start{
+                        width: 100%;
+                        height:20%;
+                        border-bottom: #004aa0;
+                        background-color: #004aa0;
+                        color: white;
+                        
+                        border-radius: 10px;
+                        margin-top: -1rem;
+                        
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        
+                        .start:hover{
+                            color:gray;
+                            transition: .3s;
+                        }
+                    }
+                    
+                    button{
+                        //border: none;
+                        //background: #004aa0;
+                        //padding: 10px 15px;
+                        //border-radius: 30vh;
+                    }
+                    
+                    img{
+                        margin-top: 1rem;
+                        
+                    }
+                }
+                .body-img{
+                    
+                    img{
+                        width: 80vw;
+                        height: 50vw;
+                        margin-top: -5rem;
+                    }
+                }
+            }
+        }
+        .cards{
+            margin-top: 21rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            .card{
+                width: 25vw;
+                height: 20px;
+                margin-left: 1rem;
+
+                .card-text{
+                    
+                }
+            }
+            .card.one{
+                background-image: url(./Learning-amico.png);
+                background-size: cover;
+            }
+            .card.two{
+                background-image: url(./Search-rafiki.png);
+                background-size: cover;
+            }
+            .card.three{
+                background-image: url(./Learning-cuate.png);
+                background-size: cover;
+            }
+        }
+        
+        
+    }
+}

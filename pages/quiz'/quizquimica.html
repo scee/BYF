@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/quiz.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Franklin:wght@400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Engenharia Química</title>
+</head>
+<body>
+
+    <header>
+        <div class="container header">
+            <a href="../Myprofessionalfuture/Struture.html" class="img">
+                <img src="../media/byfNObgsm.png" alt="">
+            </a>
+            <a class="btn upper-btn" href="../pages/quimica.html"><span class="material-symbols-outlined ">undo</span></a>
+        </div>
+    </header>
+    <main>
+        <h2>Formulário de Avaliação para Engenharia Química</h2>
+        <p>Preencha o formulário abaixo para avaliar sua aptidão para o curso de Engenharia Química.</p>
+        <div class="container forms">
+            <form action="#" class="container formulario"  method="post" onsubmit="calcularResultado(); return false;">
+                <!-- Perguntas vocacionais -->
+                <div class="form">
+                    <label for="q1">1. Você tem interesse em processos químicos e transformações de substâncias?</label>
+                    <select id="q1" class="card" name="q1">
+                        <option value="none">Opção</option>
+                        <option value="ind">É indiferente para mim</option>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </div><br>
+                <div class="form">
+                    <label for="q2">2. Gosta de resolver problemas relacionados à composição e reatividade química?</label>
+                    <select id="q2" class="card" name="q2">
+                        <option value="none">Opção</option>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </div> <br>
+                <div class="form">
+                    <label for="q3">3. Como você se sente em relação a desafios que envolvem cálculos e análises de processos químicos?</label>
+                    <select id="q3" class="card" name="q3">
+                        <option value="none">Opção</option>
+                        <option value="ind">É indiferente para mim</option>
+                        <option value="sim">Gosto desses desafios</option>
+                        <option value="nao">Não vejo piada</option>
+                    </select>
+                </div><br>
+                <div class="form">
+                    <label for="q4">4. Já teve alguma experiência prática em laboratórios de química ou processos industriais?</label>
+                    <select id="q4" class="card" name="q4">
+                        <option value="none">Opção</option>
+                        <option value="sim">Já</option>
+                        <option value="nao">Nunca</option>
+                    </select>
+                </div> <br>
+                <div class="form">
+                    <label for="q5">5. Como você aborda e resolve problemas, especialmente aqueles relacionados a fenômenos químicos?</label>
+                    <select id="q5" class="card" name="q5">
+                        <option value="none">Opção</option>
+                        <option value="ind">É indiferente para mim</option>
+                        <option value="sim">Com facilidade</
+
+option>
+                        <option value="nao">Com dificuldade</option>
+
+                    </select>
+                </div> <br>
+                <div class="form">
+                    <label for="q6">6. Você se sente confortável com conceitos matemáticos, especialmente aqueles aplicados em balanços de massa e energia?</label>
+                    <select id="q6" class="card" name="q6">
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </div> <br>
+                <div class="form">
+                    <label for="q7">7. Como você se sai ao trabalhar com equipamentos e instrumentos de laboratório?</label>
+                    <select id="q7" class="card" name="q7">
+                        <option value="none">Opção</option>
+                        <option value="ind">É indiferente para mim</option>
+                        <option value="sim">Trabalho bem com eles</option>
+                        <option value="nao">Não tenho muita afinidade</option>
+                    </select>
+                </div><br>
+                <div class="form">
+                    <label for="q8">8. Você tem interesse em desenvolver novos materiais, produtos químicos ou processos?</label>
+                    <select id="q8" class="card" name="q8">
+                        <option value="none">Opção</option>
+                        <option value="ind">É indiferente para mim</option>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </div> <br>
+                <div class="form">
+                    <label for="q9">9. Já teve alguma experiência prática com análises de impacto ambiental ou tratamento de resíduos?</label>
+                    <select id="q9" class="card" name="q9">
+                        <option value="none">Opção</option>
+                        <option value="sim">Já</option>
+                        <option value="nao">Nunca</option>
+                    </select>
+                </div> <br>
+                <div class="form">
+                    <label for="q10">10. Como você lida com desafios relacionados à segurança em processos químicos e manuseio de substâncias perigosas?</label>
+                    <select id="q10" class="card" name="q10">
+                        <option value="none">Opção</option>
+                        <option value="ind">É indiferente para mim</option>
+                        <option value="sim">Gosto desses desafios</option>
+                        <option value="nao">Não gosto muito</option>
+                    </select>
+                </div> <br>
+                <div class="form">
+                    <label for="q11">11. Você possui (ou deseja possuir) habilidades práticas em processos de fermentação, destilação ou síntese química?</label>
+                    <select id="q11" class="card" name="q11">
+                        <option value="none">Opção</option>
+                        <option value="ind">É indiferente para mim</option>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </div> <br>
+                <div class="form">
+                    <label for="q12">12. Como você se comporta em ambientes de trabalho em equipe, especialmente em projetos de engenharia química colaborativa?</label>
+                    <select id="q12" class="card" name="q12">
+                        <option value="none">Opção</option>
+                        <option value="ind">É indiferente para mim</option>
+                        <option value="sim">Gosto de trabalhos em equipe</option>
+                        <option value="nao">Não gosto muito de trabalhos em equipe</option>
+                    </select>
+                </div> <br>
+                <div class="form">
+                    <label for="q13">13. Já teve a oportunidade de aplicar conhecimentos de engenharia química para resolver problemas práticos do dia a dia?</label>
+                    <select id="q13" class="card" name="q13">
+                        <option value="none">Opção</option>
+                        <option value="ind">Não sei</option>
+                        <option value="sim">Já</option>
+                        <option value="nao">Nunca</option>
+                    </select>
+                </div> <br>
+                <div class="form">
+                    <label for="q14">14. Você está ciente da importância da sustentabilidade e normas ambientais na área de engenharia química?</label>
+                    <select id="q14" class="card" name="q14">
+                        <option value="none">Opção</option>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </div> <br>
+                <div class="form">
+                    <label for="q15">15. Como você encara a necessidade constante de aprendizado contínuo na área de engenharia química?</label>
+                    <select id="q15" class="card" name="q15">
+                         <option value="none">Opção</option>
+                        <option value="ind">Não sei</option>
+                        <option value="sim">É algo necessário!</option>
+                        <option value="nao">Acho isso chato</option>
+                    </select>
+                </div> <br>
+                <!-- Botão de envio -->
+                <div class="btn"><button type="submit" >Enviar Respostas</button></div>
+            </form>
+            <div id="resultado" class="resultado"></div>
+        </div>
+    </main>
+</body>
+</html>

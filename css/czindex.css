@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --transition: 0.8s all ease-in-out;
+  --shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  --font1: "Roboto", sans-serif;
+  --font2: "Libre Franklin", sans-serif;
+  --font3: "Oswald", sans-serif;
+  --pri-color: #004AAD;
+  --sec-color: #f4f4f4;
+  --thr-color: #030c17;
+  --wht-color: white;
+  --blk-color: black;
+}
+
+body {
+  background-image: url(../media/p.png);
+  background-size: cover;
+}
+
+header .header {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  margin-top: 2rem;
+}
+header .header .img {
+  margin-right: rem;
+  width: 200px;
+}
+header .header .img img {
+  width: 100%;
+}
+header .header .upper-btn {
+  color: var(--pri-color);
+  background-color: var(--sec-color);
+  display: block;
+  margin: 1rem;
+}
+
+main .section {
+  margin-top: 5rem;
+  background-color: var(--sec-color);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  width: 80vw;
+  height: 50vh;
+}
+main .section h2 {
+  color: var(--pri-color);
+  font-weight: bolder;
+  display: none;
+}
+main .section .block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 70%;
+  text-align: center;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  border-radius: 10px;
+  transition: var(--transition);
+}
+main .section .block:hover {
+  background-image: none;
+  transition: var(--transition);
+}
+main .section .block:hover .btn {
+  display: block;
+  color: var(--wht-color);
+  background-color: var(--pri-color);
+  box-shadow: var(--shadow);
+}
+main .section .block:hover .btn:hover {
+  background-color: var(--wht-color);
+}
+main .section .block:hover .btn:hover .material-symbols-outlined {
+  color: var(--pri-color);
+}
+main .section .block:hover h2 {
+  display: block;
+}
+main .section .sec1 {
+  background-image: url(../media/Learning-rafiki.png);
+  background-size: cover;
+}
+main .section .sec2 {
+  background-image: url(../media/Learning-pana.png);
+  background-size: cover;
+}
+
+.btn {
+  background-color: var(--pri-color);
+  color: var(--wht-color);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+#btn {
+  background-color: inherit;
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url(../media/p.png);
+    background-size: cover;
+  }
+  header .header {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding: 1rem;
+    margin: 1rem;
+  }
+  header .header .img {
+    margin-right: 1rem;
+    width: 100px;
+  }
+  header .header .img img {
+    width: 100%;
+  }
+  header .header .upper-btn {
+    color: var(--pri-color);
+    background-color: var(--sec-color);
+    display: block;
+  }
+  main .section {
+    margin-top: 5rem;
+    background-color: var(--sec-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    width: 90vw;
+    height: 80vh;
+    padding: 2rem;
+  }
+  main .section h2 {
+    color: var(--pri-color);
+    font-weight: bolder;
+    display: none;
+  }
+  main .section .block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 40%;
+    text-align: center;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    border-radius: 10px;
+    transition: var(--transition);
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  main .section .block:hover {
+    background-image: none;
+    transition: var(--transition);
+  }
+  main .section .block:hover .btn {
+    display: block;
+    color: var(--wht-color);
+    background-color: var(--pri-color);
+    box-shadow: var(--shadow);
+  }
+  main .section .block:hover .btn:hover {
+    background-color: var(--wht-color);
+  }
+  main .section .block:hover .btn:hover .material-symbols-outlined {
+    color: var(--pri-color);
+  }
+  main .section .block:hover h2 {
+    display: block;
+  }
+  main .section .sec1 {
+    background-image: url(../media/Learning-rafiki.png);
+    background-size: cover;
+  }
+  main .section .sec2 {
+    background-image: url(../media/Learning-pana.png);
+    background-size: cover;
+  }
+}/*# sourceMappingURL=czindex.css.map */
